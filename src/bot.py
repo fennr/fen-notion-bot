@@ -13,12 +13,13 @@ from time import sleep
 
 update_id = None
 
+BOT_TOKEN = '1200994135:AAGwosYLPwpVDfLahuBIjNduhsMq2WMrp1Q'
 
 def main():
     """Run the bot."""
     global update_id
     # Telegram Bot Authorization Token
-    bot = telegram.Bot(${{ secrets.BOT_TOKEN }})
+    bot = telegram.Bot(BOT_TOKEN)
 
     # get the first pending update_id, this is so we can skip over it in case
     # we get an "Unauthorized" exception.
