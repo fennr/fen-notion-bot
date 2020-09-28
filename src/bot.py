@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """Simple Bot to reply to Telegram messages.
@@ -13,28 +14,14 @@ from time import sleep
 
 update_id = None
 
-BOT_TOKEN = '1200994135:AAGwosYLPwpVDfLahuBIjNduhsMq2WMrp1Q'
 
 def main():
     """Run the bot."""
     global update_id
     # Telegram Bot Authorization Token
+    BOT_TOKEN = '1200994135:AAGwosYLPwpVDfLahuBIjNduhsMq2WMrp1Q'
     bot = telegram.Bot(BOT_TOKEN)
 
-<<<<<<< HEAD
-@bot.message_handler(commands=['start'])
-def start_message(message):
-    bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
-
-@bot.message_handler(content_types=['text'])
-def send_text(message):
-    if message.text.lower() == 'привет':
-        bot.send_message(message.chat.id, 'Привет, мой создатель')
-    elif message.text.lower() == 'пока':
-        bot.send_message(message.chat.id, 'Прощай, создатель')
-
-bot.polling()
-=======
     # get the first pending update_id, this is so we can skip over it in case
     # we get an "Unauthorized" exception.
     try:
@@ -68,4 +55,3 @@ def echo(bot):
 
 if __name__ == '__main__':
     main()
->>>>>>> parent of c81b5ee... telebot test
