@@ -1,13 +1,9 @@
-discord==1.0.1
-discord.py==1.2.5
 matplotlib==3.3.1
 notion==0.0.25
 numpy==1.19.1
 pandas==1.1.1
-pyflakes==2.2.0
 pylint==2.6.0
 pyTelegramBotAPI==3.7.3
-pytest==3.0.2
 python-dateutil==2.8.1
 python-slugify==4.0.1
 python-telegram-bot==12.8
