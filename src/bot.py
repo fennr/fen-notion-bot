@@ -40,7 +40,6 @@ def main():
             # The user has removed or blocked the bot.
             update_id += 1
 
-
 def echo(bot):
     """Echo the message the user sent."""
     global update_id
